@@ -15,15 +15,15 @@ const Banner = () => {
           className="object-cover w-full h-full"
         />
       </div>
-      <Link to="/event">
-        <button
-          className={cx(
-            "w-[187px] sm:w-[320px] h-[55px] rounded-[10px] p-4 bg-gradient-to-r from-[#8456EC] to-[#E87BF8] text-white self-center xl:self-end mt-[36px] flex xl:hidden item-center justify-center text-base sm:text-xl leading-[18px] sm:leading-[23px] font-bold"
-          )}
-        >
+      <button
+        className={cx(
+          "w-[187px] sm:w-[320px] h-[55px] rounded-[10px] p-4 bg-gradient-to-r from-[#8456EC] to-[#E87BF8] text-white self-center xl:self-end mt-[36px] flex xl:hidden item-center justify-center text-base sm:text-xl leading-[18px] sm:leading-[23px] font-bold"
+        )}
+      >
+        <Link to="/event" className="w-full h-full">
           🎉 Create my event
-        </button>
-      </Link>
+        </Link>
+      </button>
     </div>
   );
 };
